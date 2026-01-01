@@ -26,4 +26,6 @@ const myFunc=function(){
     console.log("hello world");
 }
 
+//stack memory : Stack(for primitive data types{number,string,boolean,undefined,null,symbol,bigint} copy create hoti hai) 
+//and Heap(for non-primitive data types{arrays,objects,functions} by reference original value)
 
