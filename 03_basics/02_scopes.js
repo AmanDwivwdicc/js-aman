@@ -28,3 +28,21 @@ function one(){
 
 //one()
 
+//Two ways to make functions:
+
+console.log(addone(5)); //function creation ke pahle bhi use kr sakte hain //6
+function addone(num){ 
+    return num+1
+}
+
+//console.log(addtwo(5)); //error  //Cannot access 'addtwo' before initialization
+const addtwo = function(num){  //function as an expression
+    return num+2
+}
+
+
+
+
+
+
+
