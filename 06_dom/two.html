@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom chai or code</title>
+</head>
+<body style="background-color: #212121; color:#fff ;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thursday</div>
+    </div>
+
+</body>
+<script>
+    const parents = document.querySelector('.parent')
+    //console.log(parents) //sects the div with class parent
+    //console.log(parents.children); //selects all the children of the div with class parent and returns a html collection which is similar to an parents.children
+    //console.log(parents.children[1].innerText);//selects the second child of the div with class parent and returns its inner text
+    parents.children[1].innerText = "mangalvar"
+    //console.log(parents.children[1].innerText) //changes the inner text of the second child of the div with class parent to mangalvar
+
+    for (let i = 0; i < parents.children.length; i++) {
+        console.log(parents.children[i].innerHTML)
+        
+    } //loops through all the children of the div with class parent and logs their inner html
+     
+    parents.children[1].style.color = "orange"; //changes the color of the second child of the div with class parent to orange
+    const first = parents.firstElementChild; //selects the first child of the div with class parent
+    //console.log(first)
+    //console.log(first.parentElement); //selects the parent of the first child of the div with class parent
+    
+    console.log("NODES: ", parent.childNodes);
+    
+
+
+
+</script>
+</html>

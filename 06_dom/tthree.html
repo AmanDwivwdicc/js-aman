@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chaiorcode</title>
+</head>
+<body style="background-color: #212121; color: #fff">
+    
+</body>
+<script>
+    const div = document.createElement('div'); //creates a new div element
+    console.log(div);
+    div.className = "main"
+    div.id = Math.round(Math.random()*10+1)
+    div.setAttribute('title', 'this is a div') //sets the title attribute of the div element
+    //div.innerText = "this is a dynamically created div" //sets the inner text of
+    div.style.backgroundColor ="green"
+    div.style.padding = "12px"
+
+    //.innerText overwrites the previous text so we do not prefer it much, we use text nodes to enter texts
+    const addText = document.createTextNode("Chai aur code")
+    div.appendChild(addText)
+
+    //div is created in memory but still not attached to the page
+
+    document.body.appendChild(div)
+
+
+
+
+
+</script>
+</html>
