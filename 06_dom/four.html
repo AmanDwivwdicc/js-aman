@@ -16,19 +16,30 @@
         li.innerHTML = `${LangName}`
         document.querySelector('.language').appendChild(li)
     }
+
     //optimised approach:
-    function addOptiLang(LangName){
-        const li = document.createElement('li')
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
         li.appendChild(document.createTextNode(langName))
         document.querySelector('.language').appendChild(li)
     }
 
-
     addLang("python")
     addLang("typescript")
+    addOptiLanguage("chal na bsdk")
     addLang("cpp")
+    addLang("sanskrit")
     
+    //edit:
+    const secondLang = document.querySelector("li:nth-child(2)")
+    secondLang.append(document.createTextNode("langChange")) 
+    const newli = document.createElement('li')
+    newli.textContent = "mojo"
+    secondLang.replaceWith(newli)
 
+    //remove:
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
 
 </script>
 </html>
